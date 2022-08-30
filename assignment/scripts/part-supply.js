@@ -122,3 +122,5 @@ while(total > starting) {
  };
 console.log(boxesTotal," is the total number of boxes filled.");
  console.log(total+box-starting,"is the total amount of parts left over");
+
+
