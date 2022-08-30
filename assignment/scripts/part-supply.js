@@ -51,6 +51,19 @@ for(let x = 0; x < supplyChanges.length; x++) {
     }
     
 };
+for(let x = 0; x < supplyChanges.length; x++) {
+    if(supplyChanges[x] > 0) {
+        console.log("Added",supplyChanges[x],"parts");
+    } else if(supplyChanges[x] == 0) {
+        console.log("No Change.", supplyChanges[x]);
+    } else {
+        console.log("Removed",supplyChanges[x],"parts");
+    }
+    
+};
+//I added these three different examples for question 6 as the exact format (for the last two examples) 
+// isn't very clear to me. At least my bases are covered now lol, but it is a little messier looking in
+// the console now. 
 
 
 // STRETCH GOALS
@@ -66,11 +79,29 @@ for(x of supplyChanges) {
     } else {
         console.log("Removed x parts.",x);
     }
-  }
+  };
+
+  for(x of supplyChanges) {
+
+    if(x > 0) {
+        console.log("Added",x,"parts");
+    } else if(x == 0) {
+        console.log("No Change.",x);
+    } else {
+        console.log("Removed",x,"parts");
+    }
+  };
+  // I also added two variations for this one due to my comment after step 6. 
+
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
-
+let text = 0;
+for(let x = 0; x < supplyChanges.length; x++) {
+    text += supplyChanges[x];
+    console.log(text);
+}
+console.log("The total number of available parts is",text);
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. 
 //    There are 572 parts in total, and each box holds 7 parts.
