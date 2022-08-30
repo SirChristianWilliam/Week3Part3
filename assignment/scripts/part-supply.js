@@ -1,6 +1,6 @@
 console.log('****** Part Supply *******');
 // REQUIRED FEATURES
-
+asdf
 // 1. Create a variable called 'partsNeeded' with a value of the number 40 
 //    & console.log the variable
 console.log('1. Number of partsNeeded:');
