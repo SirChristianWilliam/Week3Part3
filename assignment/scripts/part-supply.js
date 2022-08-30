@@ -102,6 +102,7 @@ for(let x = 0; x < supplyChanges.length; x++) {
     console.log(text);
 }
 console.log("The total number of available parts is",text);
+
 // 9. We have a large stash of parts in our warehouse that we 
 //    need to box up and get ready for shipment. 
 //    There are 572 parts in total, and each box holds 7 parts.
@@ -109,3 +110,15 @@ console.log("The total number of available parts is",text);
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+let box = 7;
+let total = 572;
+let starting = 0; 
+let boxesTotal;
+let adjustment=1;
+
+while(total > starting) {
+    starting += box;
+    boxesTotal = (starting/box)-adjustment;
+ };
+console.log(boxesTotal," is the total number of boxes filled.");
+ console.log(total+box-starting,"is the total amount of parts left over");
